@@ -784,3 +784,63 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/**########################################**/
+ /** Overrides **/
+body{
+    font-family: 'Open Sans',sans-serif !important;
+}
+
+header a, header a:visited{
+    text-decoration: none !important;
+    color: inherit !important;
+}
+h1.site-title{
+    font-size: 84px;
+    text-transform: uppercase;
+    padding: 0px;
+    margin:0px;
+    margin-top:100px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    color: #e74c3c;
+}
+
+h2.site-description{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    margin-bottom: 100px;
+    margin-top:20px;
+    padding-left:3px;
+    color: #7f8c8d;
+
+}
+h1.entry-title{
+    font-size: 36px;
+    /*text-transform: uppercase;*/
+    font-weight: 900;
+    margin-top:5px;
+    color: #333;
+    line-height: 46px;
+}
+
+div.entry-meta{
+    text-transform: uppercase;
+    color: #7f8c8d;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+div.entry-content{
+    margin-top:40px;
+    font-size: 18px;
+    color : #666;
+    line-height: 36px;
+}
+
+div.entry-content p{
+    margin-bottom:10px;
+}

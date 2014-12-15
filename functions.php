@@ -103,6 +103,8 @@ function bloom_scripts() {
     wp_enqueue_script("jquery");
 	wp_enqueue_style( 'bloom-style', get_stylesheet_uri() );
     wp_enqueue_style("bloom-bs","//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css");
+    wp_enqueue_style("bloom-gf-os","//fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800,900");
+    wp_enqueue_style("bloom-gf-coda","//fonts.googleapis.com/css?family=Coda:400,800");
 
 	wp_enqueue_script( 'bloom-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
