@@ -789,9 +789,15 @@ object {
  /** Overrides **/
 body{
     font-family: 'Open Sans',sans-serif !important;
+    -webkit-font-smoothing: antialiased;
 }
 
-header a, header a:visited{
+.banner{
+    background-color: #ecf0f1;
+    margin-bottom: 100px;
+}
+
+header a, header a:visited, .entry-footer a{
     text-decoration: none !important;
     color: inherit !important;
 }
@@ -800,7 +806,7 @@ h1.site-title{
     text-transform: uppercase;
     padding: 0px;
     margin:0px;
-    margin-top:100px;
+    margin-top:80px;
 
     font-family: 'Open Sans', sans-serif;
     font-weight: 900;
@@ -815,13 +821,13 @@ h2.site-description{
     margin-bottom: 100px;
     margin-top:20px;
     padding-left:3px;
-    color: #7f8c8d;
+    color: #3E4147;
 
 }
 h1.entry-title{
-    font-size: 36px;
+    font-size: 32px;
     /*text-transform: uppercase;*/
-    font-weight: 900;
+    font-weight: 800;
     margin-top:5px;
     color: #333;
     line-height: 46px;
@@ -829,7 +835,7 @@ h1.entry-title{
 
 div.entry-meta{
     text-transform: uppercase;
-    color: #7f8c8d;
+    color: #999;
     font-weight: 600;
     font-size: 12px;
 }
@@ -842,5 +848,25 @@ div.entry-content{
 }
 
 div.entry-content p{
-    margin-bottom:10px;
+    margin-bottom:20px;
+}
+
+.entry-footer{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.entry-meta span{
+    margin-right: 5px;
+}
+
+.entry-meta a:hover{
+    color: #e74c3c !important;
+}
+
+article.post{
+    margin-bottom: 100px;
+    padding-bottom: 80px;
+    border-bottom: 7px solid #ddd;
 }
