@@ -23,6 +23,15 @@
     <div class="banner">
         <div class="container">
             <div class="row">
+                <div class="col-md-12">
+                    <nav id="site-navigation" class="main-navigation " role="navigation">
+                        <button class="menu-toggle" aria-controls="menu"
+                                aria-expanded="false"><?php _e('Primary Menu', 'bloom'); ?></button>
+                        <?php wp_nav_menu(array('theme_location' => 'primary','menu_class'=>'pull-right')); ?>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <a class="skip-link screen-reader-text" href="#content"><?php _e('Skip to content', 'bloom'); ?></a>
 
@@ -35,11 +44,7 @@
                         </div>
                         <!-- .site-branding -->
 
-                        <!--                    <nav id="site-navigation" class="main-navigation" role="navigation">-->
-                        <!--                        <button class="menu-toggle" aria-controls="menu"-->
-                        <!--                                aria-expanded="false">--><?php //_e('Primary Menu', 'bloom'); ?><!--</button>-->
-                        <!--                        --><?php //wp_nav_menu(array('theme_location' => 'primary')); ?>
-                        <!--                    </nav>-->
+
                         <!-- #site-navigation -->
                     </header>
                     <!-- #masthead -->

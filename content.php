@@ -18,11 +18,13 @@
 
 	<div class="entry-content">
 		<?php
+        the_post_thumbnail();
 			/* translators: %s: Name of current post */
-			the_content( sprintf(
-				__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'bloom' ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
+//			the_content( sprintf(
+//				__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'bloom' ),
+//				the_title( '<span class="screen-reader-text">"', '"</span>', false )
+//			) );
+        the_excerpt();
 		?>
 
 		<?php

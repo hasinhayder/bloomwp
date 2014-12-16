@@ -115,11 +115,11 @@ function bloom_entry_footer() {
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( __( 'Leave a comment', 'bloom' ), __( '1 Comment', 'bloom' ), __( '% Comments', 'bloom' ) );
+		comments_popup_link( __( 'Leave a comment', 'bloom' ), __( '<span class="badge">1</span> Comment', 'bloom' ), __( '<span class="badge">%</span> Comments', 'bloom' ) );
 		echo '</span>';
 	}
 
-	edit_post_link( __( 'Edit', 'bloom' ), '<span class="edit-link">', '</span>' );
+	edit_post_link( __( '/ Edit', 'bloom' ), '<span class="edit-link">', '</span>' );
 }
 endif;
 
